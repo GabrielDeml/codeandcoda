@@ -73,7 +73,7 @@ namespace AlexaSkill.Controllers
 						{
 							var theTimeZone = await GetTimeZone();
 							theGreeting = GetGreeting(theTimeZone);
-							speak += "Hello World! " + theGreeting;
+							speak += "Hello World! Joe was here. " + theGreeting;
 						}
 						break;
 					case "IntentRequest":
