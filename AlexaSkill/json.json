@@ -1,0 +1,12 @@
+{
+	"body": {
+		"version": "1.0",
+		"response": {
+			"outputSpeech": {
+				"type": "PlainText",
+				"text": "Hello World!  Welcome programmers, welcome music lovers, welcome to Code and Coda!"
+			},
+			"type": "_DEFAULT_RESPONSE"
+		}
+	}
+}

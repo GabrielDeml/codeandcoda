@@ -1,0 +1,38 @@
+﻿@{
+	var getOrPost = ViewData["getOrPost"];
+	var requestType = ViewData["requestType"];
+	var greeting = ViewData["greeting"];
+	var jsonResponse = ViewData["jsonResponse"];
+}
+
+@if (getOrPost == "GET") {
+<text>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/site.js?@DateTime.UtcNow.Ticks"></script>
+
+API Access Token
+<br/>
+<textarea id="apiAccessToken" style="width:500px;height:200px;"></textarea>
+<br/><br/>
+Graph Access Token
+<br/>
+<textarea id="graphAccessToken" style="width:500px;height:200px;"></textarea>
+<br/><br/>
+
+<input type="button" value="Launch Request" onclick="postForm('LaunchRequest');" />
+<br /><br />
+<input type="button" value="Intent Request - Get Teams" onclick="postForm('IntentRequest', 'getteams');" />
+<br /><br />
+<input type="button" value="Intent Request - Get Messages" onclick="postForm('IntentRequest', 'getmessages');" />
+<br /><br />
+
+</text>
+}
+
+else
+{
+<text>
+	@Html.Raw(jsonResponse);
+</text>
+}
