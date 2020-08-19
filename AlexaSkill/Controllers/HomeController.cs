@@ -227,7 +227,7 @@ namespace AlexaSkill.Controllers
 
 		private string GetGreeting(string theTimeZone)
 		{
-			var theGreeting = "";
+			var theGreeting = "Hello from Gabe";
 			//var stringTimeZoneId = TZConvert.IanaToWindows(theTimeZone.Replace("\"", ""));
 			//var timeZoneInfo = TimeZoneInfo.FindSystemTimeZoneById(stringTimeZoneId);
 			//var userDateTime = TimeZoneInfo.ConvertTime(DateTime.UtcNow, TimeZoneInfo.Utc, timeZoneInfo);
